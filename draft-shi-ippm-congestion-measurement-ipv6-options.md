@@ -10,7 +10,6 @@ abbrev: CM
 docname: draft-shi-ippm-congestion-measurement-ipv6-options-latest
 obsoletes:
 updates:
-# date: 2022-02-02 -- date is filled in automatically by xml2rfc if not given
 
 area: "Operations and Management"
 workgroup: "IP Performance Measurement"
@@ -70,7 +69,7 @@ The Congestion Measurement enables precise congestion control, aids in effective
 
 # Congestion Measurement Option {#option}
 
-One IPv6 header option, Congestion Measurement Option is defined to carry the Congestion Measurement Data-Fields.
+One IPv6 option, Congestion Measurement Option is defined to carry the Congestion Measurement Data-Fields.
 
 ~~~
  0                   1                   2                   3
@@ -107,7 +106,8 @@ TBD.
 
 # IANA Considerations
 
-IANA is requested to assign an IPv6 Header Option as follows:
+
+IANA is requested to assign an IPv6 Option from the "Destination Options and Hop-by-Hop Options" subregistry of "[Internet Protocol Version 6 (IPv6) Parameters](https://www.iana.org/assignments/ipv6-parameters/)" as follows:
 
 | Value | Description | Reference |
 |-------|-------------|-----------|
