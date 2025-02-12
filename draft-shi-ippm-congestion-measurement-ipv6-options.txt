@@ -5,10 +5,10 @@
 IP Performance Measurement                                   H. Shi, Ed.
 Internet-Draft                                                   T. Zhou
 Intended status: Standards Track                                  Huawei
-Expires: 27 February 2025                                         Y. Liu
+Expires: 16 August 2025                                           Y. Liu
                                                                   M. Han
                                                             China Unicom
-                                                          26 August 2024
+                                                        12 February 2025
 
 
                 IPv6 Options for Congestion Measurement
@@ -49,11 +49,11 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 27 February 2025.
+   This Internet-Draft will expire on 16 August 2025.
 
 Copyright Notice
 
-   Copyright (c) 2024 IETF Trust and the persons identified as the
+   Copyright (c) 2025 IETF Trust and the persons identified as the
    document authors.  All rights reserved.
 
    This document is subject to BCP 78 and the IETF Trust's Legal
@@ -184,11 +184,11 @@ Table of Contents
 5.2.  Informative References
 
    [I-D.draft-shi-ippm-congestion-measurement-data]
-              Shi, H., Zhou, T., and Z. Li, "Data Fields for Congestion
-              Measurement", Work in Progress, Internet-Draft, draft-shi-
-              ippm-congestion-measurement-data-00, 3 March 2024,
-              <https://datatracker.ietf.org/doc/html/draft-shi-ippm-
-              congestion-measurement-data-00>.
+              Shi, H., Zhou, T., Zhao, G., and Z. Li, "Data Fields for
+              Congestion Measurement", Work in Progress, Internet-Draft,
+              draft-shi-ippm-congestion-measurement-data-02, 16 October
+              2024, <https://datatracker.ietf.org/doc/html/draft-shi-
+              ippm-congestion-measurement-data-02>.
 
 Authors' Addresses
 
