@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2025-01-30T00:36:07.162097+00:00",
+  "timestamp": "2025-02-13T00:37:46.908820+00:00",
   "repo": "VMatrix1900/draft-congestion-measurement-ipv6-options",
   "labels": [
     {
@@ -47,8 +47,44 @@
       "name": "wontfix",
       "description": "This will not be worked on",
       "color": "ffffff"
+    },
+    {
+      "name": "template_sync",
+      "description": "",
+      "color": "C5DEF5"
     }
   ],
   "issues": [],
-  "pulls": []
+  "pulls": [
+    {
+      "number": 1,
+      "id": "PR_kwDOLfFDGc6K5Kmq",
+      "title": "upstream merge template repository",
+      "url": "https://github.com/VMatrix1900/draft-congestion-measurement-ipv6-options/pull/1",
+      "state": "MERGED",
+      "author": "VMatrix1900",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [
+        "template_sync"
+      ],
+      "body": "Merge https://github.com/martinthomson/internet-draft-template ea87c4f",
+      "createdAt": "2025-02-12T03:06:54Z",
+      "updatedAt": "2025-02-12T03:07:27Z",
+      "baseRepository": "VMatrix1900/draft-congestion-measurement-ipv6-options",
+      "baseRefName": "main",
+      "baseRefOid": "e93410e6c2d999ebec3be62825c2e70e09abd272",
+      "headRepository": "VMatrix1900/draft-congestion-measurement-ipv6-options",
+      "headRefName": "chore/template_sync_ea87c4f",
+      "headRefOid": "6f140f3576eea1806f4e6629d73d9dc94b66b92a",
+      "closedAt": "2025-02-12T03:07:27Z",
+      "mergedAt": "2025-02-12T03:07:27Z",
+      "mergedBy": "VMatrix1900",
+      "mergeCommit": {
+        "oid": "8b171ed93ab2f590e1d54e403a5d29101eca38d5"
+      },
+      "comments": [],
+      "reviews": []
+    }
+  ]
 }
