@@ -1,0 +1,220 @@
+
+
+
+
+IP Performance Measurement                                   H. Shi, Ed.
+Internet-Draft                                                   T. Zhou
+Intended status: Standards Track                                  Huawei
+Expires: 11 December 2025                                         Y. Liu
+                                                                  M. Han
+                                                            China Unicom
+                                                             9 June 2025
+
+
+                IPv6 Options for Congestion Measurement
+       draft-shi-ippm-congestion-measurement-ipv6-options-latest
+
+Abstract
+
+   The Congestion Measurement enables precise congestion control, aids
+   in effective load balancing, and simplifies network debugging by
+   accurately reflecting the degree of congestion across network paths.
+   This document outlines how Congestion Measurement Data-Fields are
+   encapsulated in IPv6.
+
+Discussion Venues
+
+   This note is to be removed before publishing as an RFC.
+
+   Discussion of this document takes place on the IP Performance
+   Measurement Working Group mailing list (ippm@ietf.org), which is
+   archived at https://mailarchive.ietf.org/arch/browse/ippm/.
+
+   Source for this draft and an issue tracker can be found at
+   https://github.com/VMatrix1900/draft-congestion-measurement-
+   ipv6-options.
+
+Status of This Memo
+
+   This Internet-Draft is submitted in full conformance with the
+   provisions of BCP 78 and BCP 79.
+
+   Internet-Drafts are working documents of the Internet Engineering
+   Task Force (IETF).  Note that other groups may also distribute
+   working documents as Internet-Drafts.  The list of current Internet-
+   Drafts is at https://datatracker.ietf.org/drafts/current/.
+
+   Internet-Drafts are draft documents valid for a maximum of six months
+   and may be updated, replaced, or obsoleted by other documents at any
+   time.  It is inappropriate to use Internet-Drafts as reference
+   material or to cite them other than as "work in progress."
+
+   This Internet-Draft will expire on 11 December 2025.
+
+Copyright Notice
+
+   Copyright (c) 2025 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to BCP 78 and the IETF Trust's Legal
+   Provisions Relating to IETF Documents (https://trustee.ietf.org/
+   license-info) in effect on the date of publication of this document.
+   Please review these documents carefully, as they describe your rights
+   and restrictions with respect to this document.  Code Components
+   extracted from this document must include Revised BSD License text as
+   described in Section 4.e of the Trust Legal Provisions and are
+   provided without warranty as described in the Revised BSD License.
+
+Table of Contents
+
+   1.  Introduction
+     1.1.  Requirements Language
+   2.  Congestion Measurement Option
+     2.1.  Congestion Measurement Hop-by-hop Options Header (HBH)
+     2.2.  Congestion Measurement Destination Options Header (DOH)
+   3.  Security Considerations
+   4.  IANA Considerations
+   5.  References
+     5.1.  Normative References
+     5.2.  Informative References
+   Authors' Addresses
+
+1.  Introduction
+
+   [I-D.draft-shi-ippm-congestion-measurement-data] defines data fields
+   of Congestion Measurement which enables sender to obtain the degree
+   of congestion across the path.  This document defines the IPv6
+   encapsulation of the Congestion Measurement Data-Fields.
+
+1.1.  Requirements Language
+
+   The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
+   "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and
+   "OPTIONAL" in this document are to be interpreted as described in
+   BCP 14 [RFC2119] [RFC8174] when, and only when, they appear in all
+   capitals, as shown here.
+
+2.  Congestion Measurement Option
+
+   One IPv6 option, Congestion Measurement Option is defined to carry
+   the Congestion Measurement Data-Fields.
+
+    0                   1                   2                   3
+    0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+                                   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+                                   |Opt Type = TBD1|  Opt Data Len |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |                                                               |
+   .                                                               .
+   .        Congestion Measurement Data-Fields (Variable)          .
+   .                                                               .
+   |                                                               |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+                  Figure 1: Congestion Measurement Option
+
+   where:
+
+   *  Opt Type: Type value is TBD1, an 8-bit unsigned integer.
+      Identifier of the type of this Congestion Measurement Option.
+
+   *  Opt Data Len: An 8-bit unsigned integer.  Length of the Option
+      Data field of this option, that is, length of the Congestion
+      Measurement Data-Fields.
+
+   *  Congestion Measurement Data-Fields: Option-Type-specific data.  It
+      carries the data fields for Congestion Measurement as specified in
+      [I-D.draft-shi-ippm-congestion-measurement-data].
+
+2.1.  Congestion Measurement Hop-by-hop Options Header (HBH)
+
+   The Congestion Measurement option can be carried in the IPv6 Hop-by-
+   Hop Options Header.  In this case, each node along the path can
+   inspect the Congestion Info Data field if they are configured the
+   support this option.  If the U bit of Congestion Measurement Data-
+   Fields is set, intermediate nodes will modify the Congestion Info
+   Data field accordingly.In theory, the presence of the Hop-by-Hop
+   Option should not affect the traffic throughput both on nodes that do
+   not recognize this Option and on the nodes that support it.  However,
+   in a real implementation, a packet with a Hop-by-hop Option may be
+   skipped or processed in the slow path.  Proposals to mitigate the
+   problem are out of the scope for this document.
+
+2.2.  Congestion Measurement Destination Options Header (DOH)
+
+   The Congestion Measurement option can be carried in the IPv6
+   Destination Options Header.  In this case, it is usually processed by
+   the destination node.  Note that, if there is also a Routing Header
+   (RH), any visited destination in the route list can process it.  If
+   the U bit of Congestion Measurement Data-Fields is set, intermediate
+   nodes will modify the Congestion Info Data field accordingly.
+
+3.  Security Considerations
+
+   TBD.
+
+4.  IANA Considerations
+
+   IANA is requested to assign an IPv6 Option from the "Destination
+   Options and Hop-by-Hop Options" subregistry of "Internet Protocol
+   Version 6 (IPv6) Parameters (https://www.iana.org/assignments/
+   ipv6-parameters/)" as follows:
+
+           +=======+===============================+===========+
+           | Value | Description                   | Reference |
+           +=======+===============================+===========+
+           | TBD1  | Congestion Measurement Option | Section 2 |
+           +-------+-------------------------------+-----------+
+
+                                  Table 1
+
+5.  References
+
+5.1.  Normative References
+
+   [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
+              Requirement Levels", BCP 14, RFC 2119,
+              DOI 10.17487/RFC2119, March 1997,
+              <https://www.rfc-editor.org/rfc/rfc2119>.
+
+   [RFC8174]  Leiba, B., "Ambiguity of Uppercase vs Lowercase in RFC
+              2119 Key Words", BCP 14, RFC 8174, DOI 10.17487/RFC8174,
+              May 2017, <https://www.rfc-editor.org/rfc/rfc8174>.
+
+5.2.  Informative References
+
+   [I-D.draft-shi-ippm-congestion-measurement-data]
+              Shi, H., Zhou, T., Zhao, G., and Z. Li, "Data Fields for
+              Congestion Measurement", Work in Progress, Internet-Draft,
+              draft-shi-ippm-congestion-measurement-data-03, 14 April
+              2025, <https://datatracker.ietf.org/doc/html/draft-shi-
+              ippm-congestion-measurement-data-03>.
+
+Authors' Addresses
+
+   Hang Shi (editor)
+   Huawei
+   Beijing
+   China
+   Email: shihang9@huawei.com
+
+
+   Tianran Zhou
+   Huawei
+   Beijing
+   China
+   Email: zhoutianran@huawei.com
+
+
+   Ying Liu
+   China Unicom
+   Beijing
+   China
+   Email: liuy619@chinaunicom.cn
+
+
+   Mengyao Han
+   China Unicom
+   Beijing
+   China
+   Email: hanmy12@chinaunicom.cn
