@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2025-06-08T00:50:26.331106+00:00",
+  "timestamp": "2025-06-10T00:44:27.172948+00:00",
   "repo": "VMatrix1900/draft-congestion-measurement-ipv6-options",
   "labels": [
     {
@@ -127,7 +127,7 @@
       "id": "PR_kwDOLfFDGc6Yhq47",
       "title": "upstream merge template repository",
       "url": "https://github.com/VMatrix1900/draft-congestion-measurement-ipv6-options/pull/3",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "VMatrix1900",
       "authorAssociation": "OWNER",
       "assignees": [],
@@ -136,13 +136,49 @@
       ],
       "body": "Merge https://github.com/martinthomson/internet-draft-template 25d2fb2",
       "createdAt": "2025-06-02T01:58:50Z",
-      "updatedAt": "2025-06-02T01:58:51Z",
+      "updatedAt": "2025-06-09T02:01:07Z",
       "baseRepository": "VMatrix1900/draft-congestion-measurement-ipv6-options",
       "baseRefName": "main",
       "baseRefOid": "8b171ed93ab2f590e1d54e403a5d29101eca38d5",
       "headRepository": "VMatrix1900/draft-congestion-measurement-ipv6-options",
       "headRefName": "chore/template_sync_25d2fb2",
       "headRefOid": "34386a0dc3273c564f476e6c43570d60bc16644f",
+      "closedAt": "2025-06-09T02:01:05Z",
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [
+        {
+          "author": "VMatrix1900",
+          "authorAssociation": "OWNER",
+          "body": "[actions-template-sync] :construction_worker: automatically closed because there is a new open PR",
+          "createdAt": "2025-06-09T02:01:04Z",
+          "updatedAt": "2025-06-09T02:01:04Z"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "number": 4,
+      "id": "PR_kwDOLfFDGc6ZnGoT",
+      "title": "upstream merge template repository",
+      "url": "https://github.com/VMatrix1900/draft-congestion-measurement-ipv6-options/pull/4",
+      "state": "OPEN",
+      "author": "VMatrix1900",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [
+        "template_sync"
+      ],
+      "body": "Merge https://github.com/martinthomson/internet-draft-template 666634c",
+      "createdAt": "2025-06-09T02:01:08Z",
+      "updatedAt": "2025-06-09T02:01:09Z",
+      "baseRepository": "VMatrix1900/draft-congestion-measurement-ipv6-options",
+      "baseRefName": "main",
+      "baseRefOid": "8b171ed93ab2f590e1d54e403a5d29101eca38d5",
+      "headRepository": "VMatrix1900/draft-congestion-measurement-ipv6-options",
+      "headRefName": "chore/template_sync_666634c",
+      "headRefOid": "da1a69d702e69dd638fd74c9e2f01520d5ed7744",
       "closedAt": null,
       "mergedAt": null,
       "mergedBy": null,
