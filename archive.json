@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2025-06-19T00:44:45.747475+00:00",
+  "timestamp": "2025-06-22T00:51:00.684743+00:00",
   "repo": "VMatrix1900/draft-congestion-measurement-ipv6-options",
   "labels": [
     {
@@ -183,6 +183,34 @@
       "mergedAt": null,
       "mergedBy": null,
       "mergeCommit": null,
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 5,
+      "id": "PR_kwDOLfFDGc6bRd7v",
+      "title": "Update draft-shi-ippm-congestion-measurement-ipv6-options.md",
+      "url": "https://github.com/VMatrix1900/draft-congestion-measurement-ipv6-options/pull/5",
+      "state": "MERGED",
+      "author": "giuseppefioccola",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2025-06-19T14:39:21Z",
+      "updatedAt": "2025-06-20T07:54:29Z",
+      "baseRepository": "VMatrix1900/draft-congestion-measurement-ipv6-options",
+      "baseRefName": "main",
+      "baseRefOid": "8b171ed93ab2f590e1d54e403a5d29101eca38d5",
+      "headRepository": "giuseppefioccola/draft-congestion-measurement-ipv6-options",
+      "headRefName": "patch-1",
+      "headRefOid": "f74f8d2c65c668f6823f42e765b5462db5854224",
+      "closedAt": "2025-06-20T07:54:28Z",
+      "mergedAt": "2025-06-20T07:54:28Z",
+      "mergedBy": "giuseppefioccola",
+      "mergeCommit": {
+        "oid": "1bb557f5c68ecd72297f05fe60f2c99799fc8f5b"
+      },
       "comments": [],
       "reviews": []
     }
