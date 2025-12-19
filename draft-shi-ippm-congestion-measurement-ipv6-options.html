@@ -14,24 +14,23 @@
 and simplifies network debugging by accurately reflecting the degree of congestion across network paths.
 This document defines how Congestion Measurement Data Fields are encapsulated in IPv6. 
     " name="description">
-<meta content="xml2rfc 3.29.0" name="generator">
+<meta content="xml2rfc 3.31.0" name="generator">
 <meta content="Congestion Measurement" name="keyword">
 <meta content="IPv6" name="keyword">
 <meta content="draft-shi-ippm-congestion-measurement-ipv6-options-latest" name="ietf.draft">
 <!-- Generator version information:
-  xml2rfc 3.29.0
-    Python 3.12.11
+  xml2rfc 3.31.0
+    Python 3.12.12
     ConfigArgParse 1.7
     google-i18n-address 3.1.1
     intervaltree 3.1.0
     Jinja2 3.1.6
-    lxml 5.3.1
-    platformdirs 4.3.8
+    lxml 6.0.2
+    platformdirs 4.5.1
     pycountry 24.6.1
-    PyYAML 6.0.2
-    requests 2.32.4
-    setuptools 80.9.0
-    wcwidth 0.2.13
+    PyYAML 6.0.3
+    requests 2.32.5
+    wcwidth 0.2.14
 -->
 <link href="draft-shi-ippm-congestion-measurement-ipv6-options.xml" rel="alternate" type="application/rfc+xml">
 <link href="#copyright" rel="license">
@@ -1050,11 +1049,11 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <thead><tr>
 <td class="left">Internet-Draft</td>
 <td class="center">CM</td>
-<td class="right">June 2025</td>
+<td class="right">December 2025</td>
 </tr></thead>
 <tfoot><tr>
 <td class="left">Fioccola, et al.</td>
-<td class="center">Expires 22 December 2025</td>
+<td class="center">Expires 22 June 2026</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1067,12 +1066,12 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <dd class="internet-draft">draft-shi-ippm-congestion-measurement-ipv6-options-latest</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2025-06-20" class="published">20 June 2025</time>
+<time datetime="2025-12-19" class="published">19 December 2025</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Standards Track</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2025-12-22">22 December 2025</time></dd>
+<dd class="expires"><time datetime="2026-06-22">22 June 2026</time></dd>
 <dt class="label-authors">Authors:</dt>
 <dd class="authors">
 <div class="author">
@@ -1131,7 +1130,7 @@ This document defines how Congestion Measurement Data Fields are encapsulated in
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 22 December 2025.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 22 June 2026.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1211,7 +1210,7 @@ This document defines how Congestion Measurement Data Fields are encapsulated in
       <h2 id="name-introduction">
 <a href="#section-1" class="section-number selfRef">1. </a><a href="#name-introduction" class="section-name selfRef">Introduction</a>
       </h2>
-<p id="section-1-1"><span>[<a href="#I-D.draft-shi-ippm-congestion-measurement-data" class="cite xref">I-D.draft-shi-ippm-congestion-measurement-data</a>]</span> introduces data fields of Congestion Measurement which enables sender to obtain the degree of congestion across the path.
+<p id="section-1-1"><span>[<a href="#I-D.shi-ippm-congestion-measurement-data" class="cite xref">I-D.shi-ippm-congestion-measurement-data</a>]</span> introduces data fields of Congestion Measurement which enables sender to obtain the degree of congestion across the path.
 This document defines the IPv6 encapsulation of the Congestion Measurement Data Fields.<a href="#section-1-1" class="pilcrow">¶</a></p>
 <div id="requirements-language">
 <section id="section-1.1">
@@ -1263,7 +1262,7 @@ appear in all capitals, as shown here.<a href="#section-1.1-1" class="pilcrow">�
 </li>
         <li class="normal" id="section-2-4.3">
           <p id="section-2-4.3.1">Congestion Measurement Data-Fields: Option-Type-specific data. It carries the data fields for Congestion Measurement
-as specified in <span>[<a href="#I-D.draft-shi-ippm-congestion-measurement-data" class="cite xref">I-D.draft-shi-ippm-congestion-measurement-data</a>]</span>.<a href="#section-2-4.3.1" class="pilcrow">¶</a></p>
+as specified in <span>[<a href="#I-D.shi-ippm-congestion-measurement-data" class="cite xref">I-D.shi-ippm-congestion-measurement-data</a>]</span>.<a href="#section-2-4.3.1" class="pilcrow">¶</a></p>
 </li>
       </ul>
 <div id="congestion-measurement-hop-by-hop-options-header-hbh">
@@ -1296,7 +1295,7 @@ If the U bit of Congestion Measurement Data-Fields is set, intermediate nodes th
       <h2 id="name-security-considerations">
 <a href="#section-3" class="section-number selfRef">3. </a><a href="#name-security-considerations" class="section-name selfRef">Security Considerations</a>
       </h2>
-<p id="section-3-1">The security considerations of the Congestion Measurement are discussed in <span>[<a href="#I-D.draft-shi-ippm-congestion-measurement-data" class="cite xref">I-D.draft-shi-ippm-congestion-measurement-data</a>]</span>.<a href="#section-3-1" class="pilcrow">¶</a></p>
+<p id="section-3-1">The security considerations of the Congestion Measurement are discussed in <span>[<a href="#I-D.shi-ippm-congestion-measurement-data" class="cite xref">I-D.shi-ippm-congestion-measurement-data</a>]</span>.<a href="#section-3-1" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="iana-considerations">
@@ -1355,9 +1354,9 @@ If the U bit of Congestion Measurement Data-Fields is set, intermediate nodes th
 <a href="#section-5.2" class="section-number selfRef">5.2. </a><a href="#name-informative-references" class="section-name selfRef">Informative References</a>
         </h3>
 <dl class="references">
-<dt id="I-D.draft-shi-ippm-congestion-measurement-data">[I-D.draft-shi-ippm-congestion-measurement-data]</dt>
+<dt id="I-D.shi-ippm-congestion-measurement-data">[I-D.shi-ippm-congestion-measurement-data]</dt>
       <dd>
-<span class="refAuthor">Shi, H.</span>, <span class="refAuthor">Zhou, T.</span>, <span class="refAuthor">Zhao, G.</span>, and <span class="refAuthor">Z. Li</span>, <span class="refTitle">"Data Fields for Congestion Measurement"</span>, <span class="refContent">Work in Progress</span>, <span class="seriesInfo">Internet-Draft, draft-shi-ippm-congestion-measurement-data-03</span>, <time datetime="2025-04-14" class="refDate">14 April 2025</time>, <span>&lt;<a href="https://datatracker.ietf.org/doc/html/draft-shi-ippm-congestion-measurement-data-03">https://datatracker.ietf.org/doc/html/draft-shi-ippm-congestion-measurement-data-03</a>&gt;</span>. </dd>
+<span class="refAuthor">Fioccola, G.</span>, <span class="refAuthor">Zhou, T.</span>, <span class="refAuthor">Zhao, G.</span>, and <span class="refAuthor">Z. Li</span>, <span class="refTitle">"Data Fields for Congestion Measurement"</span>, <span class="refContent">Work in Progress</span>, <span class="seriesInfo">Internet-Draft, draft-shi-ippm-congestion-measurement-data-05</span>, <time datetime="2025-12-19" class="refDate">19 December 2025</time>, <span>&lt;<a href="https://datatracker.ietf.org/doc/html/draft-shi-ippm-congestion-measurement-data-05">https://datatracker.ietf.org/doc/html/draft-shi-ippm-congestion-measurement-data-05</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 </dl>
 </section>
