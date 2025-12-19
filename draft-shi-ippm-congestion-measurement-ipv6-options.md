@@ -57,6 +57,8 @@ contributor:
   city: Beijing
   country: China
 
+normative:
+
 informative:
 
 
@@ -70,7 +72,7 @@ This document defines how Congestion Measurement Data Fields are encapsulated in
 
 # Introduction {#intro}
 
-{{?I-D.draft-shi-ippm-congestion-measurement-data}} introduces data fields of Congestion Measurement which enables sender to obtain the degree of congestion across the path.
+{{?I-D.shi-ippm-congestion-measurement-data}} introduces data fields of Congestion Measurement which enables sender to obtain the degree of congestion across the path.
 This document defines the IPv6 encapsulation of the Congestion Measurement Data Fields.
 
 ## Requirements Language
@@ -101,7 +103,7 @@ where:
 - Opt Type: Type value is TBD1, an 8-bit unsigned integer. Identifier of the type of this Congestion Measurement Option.
 - Opt Data Len: An 8-bit unsigned integer. The length of the Option Data field of this option, that is, the length of the Congestion Measurement Data-Fields.
 - Congestion Measurement Data-Fields: Option-Type-specific data. It carries the data fields for Congestion Measurement
-as specified in {{?I-D.draft-shi-ippm-congestion-measurement-data}}.
+as specified in {{?I-D.shi-ippm-congestion-measurement-data}}.
 
 ## Congestion Measurement Hop-by-hop Options Header (HBH)
 
@@ -120,10 +122,9 @@ If the U bit of Congestion Measurement Data-Fields is set, intermediate nodes th
 
 # Security Considerations
 
-The security considerations of the Congestion Measurement are discussed in {{?I-D.draft-shi-ippm-congestion-measurement-data}}.
+The security considerations of the Congestion Measurement are discussed in {{?I-D.shi-ippm-congestion-measurement-data}}.
 
 # IANA Considerations
-
 
 IANA is requested to assign an IPv6 Option from the "Destination Options and Hop-by-Hop Options" subregistry of
 "[Internet Protocol Version 6 (IPv6) Parameters](https://www.iana.org/assignments/ipv6-parameters/)" as follows:
