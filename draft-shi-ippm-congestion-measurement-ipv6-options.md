@@ -120,6 +120,10 @@ The Congestion Measurement option can be carried in the IPv6 Destination Options
 In this case, it is usually processed by the destination node. Note that, if there is also a Routing Header (RH), any visited destination in the route list can process it.
 If the U bit of Congestion Measurement Data-Fields is set, intermediate nodes that are in the route list will modify the Congestion Info Data field accordingly.
 
+# Operational Considerations
+
+TBD
+
 # Security Considerations
 
 The security considerations of the Congestion Measurement are discussed in {{?I-D.shi-ippm-congestion-measurement-data}}.
