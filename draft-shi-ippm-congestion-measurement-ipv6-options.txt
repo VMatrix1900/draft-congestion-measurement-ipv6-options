@@ -5,10 +5,10 @@
 IP Performance Measurement                                   G. Fioccola
 Internet-Draft                                                   T. Zhou
 Intended status: Standards Track                                  Huawei
-Expires: 22 June 2026                                             Y. Liu
+Expires: 24 December 2026                                         Y. Liu
                                                                   M. Han
                                                             China Unicom
-                                                        19 December 2025
+                                                            22 June 2026
 
 
                 IPv6 Options for Congestion Measurement
@@ -49,11 +49,11 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 22 June 2026.
+   This Internet-Draft will expire on 24 December 2026.
 
 Copyright Notice
 
-   Copyright (c) 2025 IETF Trust and the persons identified as the
+   Copyright (c) 2026 IETF Trust and the persons identified as the
    document authors.  All rights reserved.
 
    This document is subject to BCP 78 and the IETF Trust's Legal
@@ -72,11 +72,12 @@ Table of Contents
    2.  Congestion Measurement Option
      2.1.  Congestion Measurement Hop-by-hop Options Header (HBH)
      2.2.  Congestion Measurement Destination Options Header (DOH)
-   3.  Security Considerations
-   4.  IANA Considerations
-   5.  References
-     5.1.  Normative References
-     5.2.  Informative References
+   3.  Operational Considerations
+   4.  Security Considerations
+   5.  IANA Considerations
+   6.  References
+     6.1.  Normative References
+     6.2.  Informative References
    Contributors
    Authors' Addresses
 
@@ -151,12 +152,16 @@ Table of Contents
    nodes that are in the route list will modify the Congestion Info Data
    field accordingly.
 
-3.  Security Considerations
+3.  Operational Considerations
+
+   TBD
+
+4.  Security Considerations
 
    The security considerations of the Congestion Measurement are
    discussed in [I-D.shi-ippm-congestion-measurement-data].
 
-4.  IANA Considerations
+5.  IANA Considerations
 
    IANA is requested to assign an IPv6 Option from the "Destination
    Options and Hop-by-Hop Options" subregistry of "Internet Protocol
@@ -171,9 +176,9 @@ Table of Contents
 
                                   Table 1
 
-5.  References
+6.  References
 
-5.1.  Normative References
+6.1.  Normative References
 
    [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
               Requirement Levels", BCP 14, RFC 2119,
@@ -184,14 +189,14 @@ Table of Contents
               2119 Key Words", BCP 14, RFC 8174, DOI 10.17487/RFC8174,
               May 2017, <https://www.rfc-editor.org/rfc/rfc8174>.
 
-5.2.  Informative References
+6.2.  Informative References
 
    [I-D.shi-ippm-congestion-measurement-data]
               Fioccola, G., Zhou, T., Zhao, G., and Z. Li, "Data Fields
               for Congestion Measurement", Work in Progress, Internet-
-              Draft, draft-shi-ippm-congestion-measurement-data-05, 19
-              December 2025, <https://datatracker.ietf.org/doc/html/
-              draft-shi-ippm-congestion-measurement-data-05>.
+              Draft, draft-shi-ippm-congestion-measurement-data-06, 22
+              June 2026, <https://datatracker.ietf.org/doc/html/draft-
+              shi-ippm-congestion-measurement-data-06>.
 
 Contributors
 
